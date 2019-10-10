@@ -23,23 +23,6 @@
 			<button type="button" class="btn btn-secondary" id="amber">Amber</button>
 			<button type="button" class="btn btn-secondary" id="emerald">Emerald</button>
 		 </div>
-		<!-- <div class="col-md-8">
-			<div class="row">
-					<div class="col-md-3">
-							<button type="button" class="btn btn-primary" id="ruby">Ruby</button>
-							</div>
-							<div class="col-md-3">
-							<button type="button" class="btn btn-secondary" id="diamond">Diamond</button>
-							</div>
-							<div class="col-md-3">
-							<button type="button" class="btn btn-success" id="amber">Amber</button>
-							</div>
-							<div class="col-md-3">
-							<button type="button" class="btn btn-danger" id="emerald">emerlad</button>
-						</div>	
-			</div>
-			
-		</div> -->
 	</div>
 </div>
 	<script>
@@ -62,18 +45,20 @@
 		// generate 4 random number between 1 and 12
 		
 		function crystal(){
-		for (let i=0; i < 4 ; i++ ){
-		let crysNum = Math.ceil(Math.random() * 12);
-		console.log('crystal number.'+ i + ': ' + crysNum);
-		}}
-
+			let crysNum = Math.ceil(Math.random() * 12);
+			ts = ts + crysNum;
+			console.log(crysNum)
+			console.log('total score: ' + ts)
+		}	
 		// game dynamics
 
 		// make a universal listenr tha listens to every button and affects only one button at the time 
 		$('.btn').on('click', function(){
 			let button =$(this).attr('id');
-			$('#'+button).toggle(1000).toggle(1000);})
-			
+			crystal()
+			// $('#'+button).toggle(1000).toggle(1000);
+			})
+		// console.log('total score: ' + ts)	
 
 		// don not mess with these!! these close up the JQuery space
 		})
