@@ -17,7 +17,13 @@
 	<h1>Let's play! </h1>
 <div class=conatiner>
 	<div class="row">
-		<div class="col-md-8">
+		<div class="btn-group col-md-8" role="group" aria-label="Basic example">
+			<button type="button" class="btn btn-secondary" id="ruby">Ruby</button>
+			<button type="button" class="btn btn-secondary" id="diamond">Diamond</button>
+			<button type="button" class="btn btn-secondary" id="amber">Amber</button>
+			<button type="button" class="btn btn-secondary" id="emerald">Emerald</button>
+		 </div>
+		<!-- <div class="col-md-8">
 			<div class="row">
 					<div class="col-md-3">
 							<button type="button" class="btn btn-primary" id="ruby">Ruby</button>
@@ -30,10 +36,10 @@
 							</div>
 							<div class="col-md-3">
 							<button type="button" class="btn btn-danger" id="emerald">emerlad</button>
-							</div>	
+						</div>	
 			</div>
 			
-		</div>
+		</div> -->
 	</div>
 </div>
 	<script>
@@ -54,10 +60,12 @@
 	
 		
 		// generate 4 random number between 1 and 12
+		
+		function crystal(){
 		for (let i=0; i < 4 ; i++ ){
 		let crysNum = Math.ceil(Math.random() * 12);
 		console.log('crystal number.'+ i + ': ' + crysNum);
-		}
+		}}
 
 		// game dynamics
 
