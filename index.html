@@ -9,59 +9,27 @@
 	<!-- JQuery -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<!-- bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="./assets/javascript/main.js"></script>
 	<title>Crystal Colector</title>
 </head>
 
 <body>
 	<h1>Let's play! </h1>
-<div class=conatiner>
-	<div class="row">
-		<div class="btn-group col-md-8" role="group" aria-label="Basic example">
-			<button type="button" class="btn btn-secondary" id="ruby">Ruby</button>
-			<button type="button" class="btn btn-secondary" id="diamond">Diamond</button>
-			<button type="button" class="btn btn-secondary" id="amber">Amber</button>
-			<button type="button" class="btn btn-secondary" id="emerald">Emerald</button>
-		 </div>
+	<div class=conatiner>
+		<div class="row">
+			<div class="btn-group col-md-8" role="group" aria-label="Basic example">
+				<button type="button" class="btn btn-secondary" id="ruby">Ruby</button>
+				<button type="button" class="btn btn-secondary" id="diamond">Diamond</button>
+				<button type="button" class="btn btn-secondary" id="amber">Amber</button>
+				<button type="button" class="btn btn-secondary" id="emerald">Emerald</button>
+			</div>
+		</div>
 	</div>
-</div>
 	<script>
-		// get Jquery ready: 
-		$(document).ready (function(){
 
 
-		// Define you counters 'wins', 'loses', 'total score (ts)':
-		let wins = 0
-		let loses = 0
-		let ts = 0
-
-		// define a target numebr between 19 and 120 | target number: tn
-		// bases on the function  Math.floor(Math.random() * (max - min + 1) + min) gotten form stack overflow
-		let tn = Math.floor(Math.random() * (102) + 19);
-	
-		console.log('target number: ' + tn); 
-	
-		
-		// generate 4 random number between 1 and 12
-		
-		function crystal(){
-			let crysNum = Math.ceil(Math.random() * 12);
-			ts = ts + crysNum;
-			console.log(crysNum)
-			console.log('total score: ' + ts)
-		}	
-		// game dynamics
-
-		// make a universal listenr tha listens to every button and affects only one button at the time 
-		$('.btn').on('click', function(){
-			let button =$(this).attr('id');
-			crystal()
-			// $('#'+button).toggle(1000).toggle(1000);
-			})
-		// console.log('total score: ' + ts)	
-
-		// don not mess with these!! these close up the JQuery space
-		})
 	</script>
 
 </body>
