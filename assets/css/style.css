@@ -1,0 +1,35 @@
+* {
+    font-family: 'Courier New',
+        Courier,
+        monospace;
+    box-sizing: border-box content-box;
+}
+
+/* body {
+    background-image: url("../images/wallpaper.png");
+} */
+
+
+#header {
+    background: pink;
+    text-align: center;
+}
+
+#intructions {
+    background: skyblue;
+    text-align: left;
+    width: 748px;
+}
+
+#total {
+    width: 374px;
+    height: 250px;
+    background: palegoldenrod;
+}
+
+#score {
+    width: 374px;
+    height: 250px;
+    background: honeydew;
+
+}

@@ -1,4 +1,12 @@
 $(document).ready(function () {
+
+    // place imagaes into your buttons 
+
+    for (i = 0; i < 4; i++) {
+        $("#btn" + (i + 1)).html("<img src=assets/images/" + "image" + [i + 1] + ".png" + " width='100px'>");
+    }
+
+
     // Define you counters 'wins', 'loses', 'total score (ts)':
     let wins = 0
     let loses = 0
@@ -28,7 +36,7 @@ $(document).ready(function () {
     }
     // game dynamics
 
-    //conditionals in place but mechanica re not working  
+
     function compare() {
 
         if (ts < tn) {

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- JQuery -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<!-- bootstrap -->
@@ -16,21 +17,46 @@
 </head>
 
 <body>
-	<h1>Let's play! </h1>
-	<div class=conatiner>
+	<div class="continer">
 		<div class="row">
-			<div class="btn-group col-md-8" role="group" aria-label="Basic example">
-				<button type="button" class="btn btn-secondary" id="ruby">Ruby</button>
-				<button type="button" class="btn btn-secondary" id="diamond">Diamond</button>
-				<button type="button" class="btn btn-secondary" id="amber">Amber</button>
-				<button type="button" class="btn btn-secondary" id="emerald">Emerald</button>
+			<header class="col-md-7" id="header">
+				<h1>Crystal Colector! <h1>
+			</header>
+		</div>
+
+
+
+		<div calss="col-md-8" id="intructions">
+			<h2>Intructions:</h2>
+			<p>
+				You will be given a random number at the start of the game.
+				There are four crystals below. By clicking on a crystal you, you will add a specific amount of
+				points to
+				your stotal score.
+				You win the game by matching your total score to random number. You lose the game if your total
+				score
+				goes above the random number.
+				The value of each crystal is hidden from you until you click on it.
+				Each time you when the game starts, the game will change the value of each crystal.
+			</p>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3" id="total"> </div>
+			<div class="col-md-3" id="score"></div>
+		</div>
+
+		<div class="row">
+			<div class="btn-group col-md-7" role="group" aria-label="Basic example" id="group">
+				<button type="button" class="btn btn-secondary" id="btn1">Ruby</button>
+				<button type="button" class="btn btn-secondary" id="btn2">Diamond</button>
+				<button type="button" class="btn btn-secondary" id="btn3">Amber</button>
+				<button type="button" class="btn btn-secondary" id="btn4">Emerald</button>
 			</div>
 		</div>
+
+
 	</div>
-	<script>
-
-
-	</script>
 
 </body>
 
