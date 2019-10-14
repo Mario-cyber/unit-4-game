@@ -18,6 +18,8 @@ $(document).ready(function () {
 
     let tn = Math.floor(Math.random() * (102) + 19);
     console.log('target number: ' + tn);
+    $("#tn").append(tn);
+
 
     // generate random number between 1 and 12
 
@@ -46,6 +48,7 @@ $(document).ready(function () {
             ts = 0
             tn = 0
             console.log('wins: ' + wins)
+            $("#wins").append(wins);
         } else {
             loses++
             ts = 0
@@ -53,11 +56,10 @@ $(document).ready(function () {
             console.log('target number: ' + tn);
             console.log('loses: ' + loses)
             const conf = confirm('game over, do you want to play again?')
+            $("#loses").append(loses);
         };
 
     }
-
-
 
     // don not mess with these!! these close up the JQuery space
 })
